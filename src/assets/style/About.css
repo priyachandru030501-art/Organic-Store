@@ -1,0 +1,276 @@
+.about-banner {
+  text-align: center;
+  padding: 75px 20px;
+  background:
+    linear-gradient(rgba(25, 65, 31, 0.85), rgba(25, 65, 31, 0.85)),
+    url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1400") center/cover;
+  color: white;
+}
+
+.about-banner > span {
+  color: #d4edb9;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.about-banner h1 {
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 800;
+  margin: 15px 0;
+}
+
+.about-banner p {
+  color: #e2eadf;
+}
+
+.about-banner div {
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+.about-banner a {
+  color: #d4edb9;
+}
+
+.about-story {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 65px;
+  padding: 90px 8%;
+}
+
+.about-story-image {
+  position: relative;
+}
+
+.about-story-image > img {
+  width: 100%;
+  height: 490px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.about-image-note {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  right: 25px;
+  background: white;
+  border-radius: 15px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-image-note > i {
+  color: #2e7d32;
+  font-size: 28px;
+}
+
+.about-image-note strong {
+  color: #29432e;
+  font-size: 14px;
+}
+
+.about-image-note span {
+  margin-left: auto;
+  color: #888;
+  font-size: 11px;
+}
+
+.about-story-content > span,
+.about-section-heading > span {
+  color: #438647;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.about-story-content h2 {
+  color: #243d29;
+  font-size: clamp(30px, 4vw, 43px);
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 17px 0 22px;
+}
+
+.about-story-content > p {
+  color: #727e72;
+  font-size: 14px;
+  line-height: 1.9;
+  margin-bottom: 17px;
+}
+
+.about-checks {
+  margin: 25px 0;
+}
+
+.about-checks p {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  color: #3f6042;
+  font-size: 13px;
+  margin-bottom: 13px;
+}
+
+.about-checks i {
+  color: #438647;
+}
+
+.about-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 25px;
+  background: #2e7d32;
+  color: white;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.about-button:hover {
+  background: #1b5e20;
+  color: white;
+}
+
+.about-values {
+  padding: 80px 7%;
+  background: #f3f7ed;
+}
+
+.about-section-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.about-section-heading h2 {
+  color: #243d29;
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 800;
+  margin: 12px 0;
+}
+
+.about-section-heading p {
+  color: #7c857c;
+}
+
+.about-values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.about-values-grid article {
+  text-align: center;
+  padding: 40px 30px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(38, 66, 34, 0.05);
+  transition: 0.3s;
+}
+
+.about-values-grid article:hover {
+  transform: translateY(-7px);
+}
+
+.about-values-grid article > div {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 22px;
+  background: #e8f2e0;
+  border-radius: 50%;
+  color: #2e7d32;
+  font-size: 30px;
+}
+
+.about-values-grid h3 {
+  color: #29432e;
+  font-size: 21px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.about-values-grid p {
+  color: #7c857c;
+  font-size: 13px;
+  line-height: 1.9;
+  margin: 0;
+}
+
+.about-quote {
+  margin: 80px 7%;
+  text-align: center;
+  padding: 60px 8%;
+  border-radius: 22px;
+  background: #24552a;
+  color: white;
+}
+
+.about-quote > i {
+  color: #d4edb9;
+  font-size: 45px;
+}
+
+.about-quote h2 {
+  font-size: clamp(25px, 4vw, 38px);
+  font-weight: 800;
+  line-height: 1.4;
+  margin: 20px 0;
+}
+
+.about-quote p {
+  color: #d4edb9;
+  font-size: 13px;
+}
+
+@media (max-width: 900px) {
+  .about-story {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 65px 7%;
+  }
+
+  .about-story-image > img {
+    height: 400px;
+  }
+
+  .about-values-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-story-image > img {
+    height: 320px;
+  }
+
+  .about-image-note {
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .about-image-note span {
+    display: none;
+  }
+
+  .about-values {
+    padding: 55px 6%;
+  }
+
+  .about-quote {
+    margin: 50px 5%;
+    padding: 40px 7%;
+  }
+}

@@ -1,0 +1,246 @@
+.contact-banner {
+  text-align: center;
+  padding: 75px 20px;
+  background:
+    linear-gradient(rgba(25, 65, 31, 0.85), rgba(25, 65, 31, 0.85)),
+    url("https://images.unsplash.com/photo-1542838132-92c53300491e?w=1400") center/cover;
+  color: white;
+}
+
+.contact-banner > span {
+  color: #d4edb9;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+.contact-banner h1 {
+  font-size: clamp(35px, 5vw, 52px);
+  font-weight: 800;
+  margin: 15px 0;
+}
+
+.contact-banner p {
+  color: #e2eadf;
+}
+
+.contact-banner div {
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+.contact-banner a {
+  color: #d4edb9;
+}
+
+.contact-page {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 60px;
+  padding: 85px 8%;
+  background: #fffdf5;
+}
+
+.contact-info > span {
+  color: #438647;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.contact-info > h2 {
+  color: #243d29;
+  font-size: clamp(30px, 4vw, 40px);
+  font-weight: 800;
+  margin: 15px 0;
+}
+
+.contact-info > p {
+  color: #727e72;
+  font-size: 14px;
+  line-height: 1.9;
+  margin-bottom: 30px;
+}
+
+.contact-info-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.contact-info-card > div {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 13px;
+  background: #e8f2e0;
+  color: #2e7d32;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.contact-info-card h3 {
+  color: #29432e;
+  font-size: 16px;
+  font-weight: 800;
+  margin: 3px 0 7px;
+}
+
+.contact-info-card p {
+  color: #7c857c;
+  font-size: 13px;
+  margin: 0 0 3px;
+}
+
+.contact-leaf-decoration {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #438647;
+  margin-top: 30px;
+}
+
+.contact-leaf-decoration i {
+  font-size: 30px;
+}
+
+.contact-leaf-decoration span {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.contact-form-card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(38, 66, 34, 0.08);
+}
+
+.contact-form-card h2 {
+  color: #243d29;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.contact-form-card > p {
+  color: #7c857c;
+  font-size: 13px;
+  margin: 10px 0 30px;
+}
+
+.contact-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.contact-field {
+  margin-bottom: 20px;
+}
+
+.contact-field label {
+  display: block;
+  color: #35583a;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 9px;
+}
+
+.contact-field input,
+.contact-field textarea {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid #dce5d6;
+  background: #fbfcf8;
+  color: #29432e;
+  outline: none;
+  border-radius: 9px;
+  font-size: 13px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-field input:focus,
+.contact-field textarea:focus {
+  border-color: #438647;
+  box-shadow: 0 0 0 3px rgba(67, 134, 71, 0.1);
+}
+
+.contact-field textarea {
+  resize: vertical;
+}
+
+.contact-submit {
+  width: 100%;
+  padding: 15px;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.contact-submit:hover {
+  background: #1b5e20;
+}
+
+.contact-submit i {
+  margin-left: 8px;
+}
+
+.contact-bottom-banner {
+  margin: 0 8% 80px;
+  padding: 45px 25px;
+  text-align: center;
+  background: #edf5e7;
+  border-radius: 20px;
+}
+
+.contact-bottom-banner > i {
+  color: #2e7d32;
+  font-size: 40px;
+}
+
+.contact-bottom-banner h2 {
+  color: #243d29;
+  font-size: 28px;
+  font-weight: 800;
+  margin: 15px 0;
+}
+
+.contact-bottom-banner p {
+  color: #687469;
+  font-size: 14px;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .contact-page {
+    grid-template-columns: 1fr;
+    padding: 60px 7%;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-page {
+    padding: 50px 5%;
+  }
+
+  .contact-form-card {
+    padding: 25px 18px;
+  }
+
+  .contact-form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .contact-bottom-banner {
+    margin: 0 5% 50px;
+  }
+}
